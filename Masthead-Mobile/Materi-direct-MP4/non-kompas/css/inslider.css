@@ -1,0 +1,147 @@
+html,
+body{
+    margin:0;
+    padding:0;
+}
+.insliderSmall{
+    
+}
+.inslider{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 360px;
+    height: auto;
+    z-index: 9;
+    -webkit-transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transform:translateX(-150%); 
+    -webkit-transform:translateX(-150%);
+    transform:translateX(-150%);
+    overflow: hidden;
+}
+
+.insliderTop{
+    bottom: auto;
+    top: 0;
+}
+.insliderTop__relative{
+    position: relative;
+}
+.insliderTop__kompas{
+    top: 105px;
+}
+.insliderTop__tribun{
+    top: 50px;
+}
+.insliderTop__bolasport{
+    top: 60px;
+}
+.insliderTop__grioto{
+    top: 65px;
+}
+.insliderTop__kompasiana{
+    top: 63px;
+}
+
+.inslider__wrap{
+    display: flex;
+    /*background: #000;*/
+}
+.inslider__img{
+    position: relative;
+    /*width: 100%;*/
+    display: block;
+    overflow:hidden;
+}
+
+.inslider__img__video{
+    width: 25%;
+}
+.inslider__img__video img{
+    height: 97.5%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.inslider__video{
+    width: 75%;
+    height: 100%;
+    left: 0px;
+    position: relative;
+}
+
+.inslider img, .inslider__img img{
+    width: 100%;
+    max-width: none;
+}
+
+.inslider.inslider--play{
+    -ms-transform:translateX(0); 
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+}
+.inslider.inslider--stop{
+    -ms-transform:translateX(100%); 
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%);
+}
+
+.inslider__link{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.inslider__close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+}
+
+/* rollup */
+#dfp-container-rollup.container {
+    bottom: 200px !important;
+}
+
+#dfp-appear.rollup {
+    bottom: 200px !important;
+}
+
+#dfp-close-rollup.rollup {
+    bottom: 375px !important;
+}
+
+/* kompascom */
+.banner--sticky .banner1.addInslider{
+    animation: unset !important;
+}
+
+/* kontan */
+.box-center {
+    max-width: 100%;
+}
+
+/* jixie */
+#containerJX{
+    width: 100% !important;
+    /* height: 100% !important; */
+}
